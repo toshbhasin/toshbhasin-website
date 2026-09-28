@@ -1,31 +1,29 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>From Assisted to Autonomous | AI Maturity for Universities | Tosh Bhasin</title>
-<meta name="description" content="A practical AI maturity roadmap for universities, moving from assisted AI to autonomous systems while building governance, oversight and institutional readiness.">
-
-<link rel="canonical" href="https://toshbhasin.me/articles/ai-maturity-roadmap.html">
-<link rel="icon" type="image/png" href="../assets/favicon.png">
-<meta property="og:type" content="article">
-<meta property="og:site_name" content="Tosh Bhasin">
-<meta property="og:title" content="From Assisted to Autonomous | AI Maturity for Universities | Tosh Bhasin">
-<meta property="og:description" content="A practical AI maturity roadmap for universities, moving from assisted AI to autonomous systems while building governance, oversight and institutional readiness.">
-<meta property="og:url" content="https://toshbhasin.me/articles/ai-maturity-roadmap.html">
-<meta property="og:image" content="https://toshbhasin.me/assets/ai-maturity-social-preview.png">
-<meta property="og:image:alt" content="From Assisted to Autonomous | AI Maturity Roadmap for Universities | Tosh Bhasin">
-<meta property="article:author" content="Tosh Bhasin">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="From Assisted to Autonomous | AI Maturity for Universities | Tosh Bhasin">
-<meta name="twitter:description" content="A practical AI maturity roadmap for universities, moving from assisted AI to autonomous systems while building governance, oversight and institutional readiness.">
-<meta name="twitter:image" content="https://toshbhasin.me/assets/ai-maturity-social-preview.png">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css">
-
+<meta content="A practical AI maturity roadmap for universities, moving from assisted AI to autonomous systems while building governance, oversight and institutional readiness." name="description"/>
+<link href="https://toshbhasin.me/articles/ai-maturity-roadmap.html" rel="canonical"/>
+<link href="../assets/favicon.png" rel="icon" type="image/png"/>
+<meta content="article" property="og:type"/>
+<meta content="Tosh Bhasin" property="og:site_name"/>
+<meta content="From Assisted to Autonomous | AI Maturity for Universities | Tosh Bhasin" property="og:title"/>
+<meta content="A practical AI maturity roadmap for universities, moving from assisted AI to autonomous systems while building governance, oversight and institutional readiness." property="og:description"/>
+<meta content="https://toshbhasin.me/articles/ai-maturity-roadmap.html" property="og:url"/>
+<meta content="https://toshbhasin.me/assets/ai-maturity-social-preview.png" property="og:image"/>
+<meta content="From Assisted to Autonomous | AI Maturity Roadmap for Universities | Tosh Bhasin" property="og:image:alt"/>
+<meta content="Tosh Bhasin" property="article:author"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="From Assisted to Autonomous | AI Maturity for Universities | Tosh Bhasin" name="twitter:title"/>
+<meta content="A practical AI maturity roadmap for universities, moving from assisted AI to autonomous systems while building governance, oversight and institutional readiness." name="twitter:description"/>
+<meta content="https://toshbhasin.me/assets/ai-maturity-social-preview.png" name="twitter:image"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&amp;family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="../style.css" rel="stylesheet"/>
 <style id="site-css-embedded">
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600;700&display=swap');
 :root{--charcoal:#111112;--ivory:#f4f1e9;--ink:#1b1b1a;--muted:#77716c;--pink:#c33764;--line:#d8d2c7;--white:#f8f6ef;--max:1440px}
@@ -66,8 +64,6 @@
  .article-body blockquote{font-size:24px}
 }
 </style>
-
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -101,88 +97,83 @@
   ]
 }
 </script>
+<style>
+.ai-editorial-banner{width:min(1040px,calc(100vw - 96px));margin:0 auto 34px;padding:0}
+.ai-editorial-banner img{display:block;width:100%;height:auto;object-fit:contain;border-radius:5px}
+@media(max-width:700px){.ai-editorial-banner{width:calc(100vw - 32px);margin-bottom:26px}}
+
+/* Synced article metadata row */
+.article-meta-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:18px 0 0}
+.article-meta-row .author-meta{font-family:'Montserrat',sans-serif;font-size:11px;font-weight:600;letter-spacing:.045em;color:#111112;text-transform:none}
+.article-meta-row .theme-tag{display:inline-flex;align-items:center;min-height:28px;padding:5px 10px;border-radius:4px;background:#e8e5dd;color:#53625c;font-family:'Montserrat',sans-serif;font-size:10px;line-height:1.35;letter-spacing:.04em;text-transform:uppercase}
+@media(max-width:700px){.article-meta-row{align-items:flex-start}}
+</style>
 </head>
 <body>
-
 <header class="site-header">
-  <div class="wrap">
-    <a href="../index.html" class="logo">Tosh Bhasin</a>
-    <nav class="site-nav">
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../about.html">About</a></li>
-        <li><a href="../approach.html">Approach</a></li>
-        <li><a href="../work.html">Work</a></li>
-        <li><a href="../writing.html" class="current">Writing</a></li>
-        <li><a href="../contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
+<div class="wrap">
+<a class="logo" href="../index.html">Tosh Bhasin</a>
+<nav class="site-nav">
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="../about.html">About</a></li>
+<li><a href="../approach.html">Approach</a></li>
+<li><a href="../work.html">Work</a></li>
+<li><a class="current" href="../writing.html">Writing</a></li>
+<li><a href="../contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
 </header>
-
 <main>
-  <div class="wrap">
-    <div class="article-header">
-      <a class="back" href="../writing.html">← Back to writing</a>
-      <p class="article-kicker">Perspective · AI &amp; Higher Education</p>
-      <h1>From Assisted to Autonomous</h1>
-      <p class="article-deck">Building a practical AI maturity roadmap for universities.</p>
-      <p class="article-meta">Tosh Bhasin · September 2026 · 6 min read</p>
-      <div class="article-accent" aria-hidden="true"></div>
-    </div>
+<div class="wrap">
+<div class="article-header">
+<a class="back" href="../writing.html">← Back to writing</a>
 
-    <div class="article-body prose">
-      <p>Every enterprise I've worked with eventually asks the same question: where do we start with AI? Universities are asking it now too, usually a year or two behind the corporate world, and usually with a harder version of the problem. A bank can mandate a tool and retrain a department. A university has to carry faculty senates, accreditation bodies, student privacy obligations, and a governance culture built for deliberation, not speed. The enterprise AI playbook doesn't transfer cleanly. It needs rebuilding for an institution that changes by consensus, not decree.</p>
+<h1>From Assisted to Autonomous</h1>
+<p class="article-deck">Building a practical AI maturity roadmap for universities.</p>
+<p class="article-meta-row"><span class="author-meta">Tosh Bhasin · September 2026 · 6 min read</span><span class="theme-tag theme-intelligent">Intelligent Institutions</span></p>
 
-      <p>Over the past year, running a structured AI discovery across fifteen departments at a research university, I mapped more than forty interconnected systems — admissions, registrar, finance, research administration, learning management, each with its own owner, its own data, and its own appetite for risk. What became clear fast was that "AI strategy" as a single initiative was the wrong frame. What the institution needed was a maturity model: a sequence that let different departments move at different speeds, without the whole program stalling behind the most cautious stakeholder in the room.</p>
-
-      <h2>The four phases</h2>
-
-      <p>The model has four stages, and the discipline is in not skipping any of them.</p>
-      <div class="maturity-card">
-        <p class="maturity-card-label">AI Maturity Roadmap</p>
-        <div class="maturity-strip" aria-label="Four-stage AI maturity roadmap">
-          <div class="maturity-step"><span class="stage-no">01</span><strong>ASSISTED</strong><span class="stage-copy">Human-led</span></div>
-          <div class="maturity-step"><span class="stage-no">02</span><strong>ADVISORY</strong><span class="stage-copy">AI recommends</span></div>
-          <div class="maturity-step"><span class="stage-no">03</span><strong>ADAPTIVE</strong><span class="stage-copy">AI acts within guardrails</span></div>
-          <div class="maturity-step"><span class="stage-no">04</span><strong>AUTONOMOUS</strong><span class="stage-copy">AI executes end-to-end</span></div>
-        </div>
-      </div>
-
-      <p><strong>Assisted</strong> is where almost every department starts, whether they call it that or not. A person uses AI to draft, summarize, or search, and reviews every output before it goes anywhere. The risk is low, the adoption curve is fast, and the real value here isn't productivity — it's literacy. People learn what the tools are actually good at, and just as importantly, where they fail.</p>
-
-      <p><strong>Advisory</strong> is the first real commitment. AI now sits inside a defined workflow — triaging admissions files, flagging at-risk students, forecasting resource needs — and produces a recommendation. A human still makes the call. This is where governance conversations get serious, because you're now defining what the system is allowed to suggest, and to whom, and on what data.</p>
-
-      <p><strong>Adaptive</strong> is where most enterprise deployments stop and where most university deployments should stop too, for now. Systems begin to act within guardrails and adjust based on outcomes — dynamic scheduling, automated support routing — but always under active oversight, with a clear rollback path. The temptation at this stage is to declare victory. Resist it. This phase is where you build the audit trails and escalation paths you'll need later.</p>
-
-      <p><strong>Autonomous</strong> is the stage most institutions are years from reaching responsibly, and shouldn't rush toward. Agentic systems execute a defined process end to end. The difference between a good and a reckless autonomous deployment isn't the sophistication of the model — it's whether governance was designed into the architecture from Assisted onward, or bolted on after the fact once something went wrong.</p>
-
-      <blockquote>The sequence matters more than the speed. A department that reaches Adaptive with real governance is further along than one that jumps to a flashy autonomous pilot with none.</blockquote>
-
-      <h2>What this looks like in practice</h2>
-
-      <p>In our discovery, different departments landed at different phases by design. Student-facing support workflows moved to Advisory quickly, because the downside of a bad recommendation was bounded and reviewable. Anything touching academic records or accreditation-relevant decisions stayed in Assisted far longer, because the cost of an ungoverned error there isn't just operational — it's regulatory and reputational. That unevenness isn't a failure of the program. It's the program working as intended.</p>
-
-      <p>The instinct in enterprise technology is to standardize fast and roll out wide. In higher education, the instinct that actually works is closer to the opposite: build a common maturity language everyone in the institution understands, then let each department move through it at the pace its own risk profile allows, with the Vice Chancellor's office, the Registrar, and the Deans all reading from the same map of where things stand.</p>
-
-      <p>That's the part enterprise transformation and institutional transformation have in common, even when everything else about the pace and politics is different: the roadmap only holds up if the people who have to live with it helped draw the lines.</p>
-      <div class="article-signoff">
-        <strong>Tosh Bhasin</strong>
-        <span>Digital Transformation · AI · Higher Education</span>
-        <a href="../writing.html">← Back to Writing</a>
-      </div>
-    </div>
-  </div>
+</div>
+<figure class="ai-editorial-banner"><img alt="Four-stage AI maturity journey from Assisted to Advisory to Adaptive to Autonomous" src="../assets/writing/editorial/ai-maturity.png"/></figure>
+<div class="article-body prose">
+<p>Every enterprise I've worked with eventually asks the same question: where do we start with AI? Universities are asking it now too, usually a year or two behind the corporate world, and usually with a harder version of the problem. A bank can mandate a tool and retrain a department. A university has to carry faculty senates, accreditation bodies, student privacy obligations, and a governance culture built for deliberation, not speed. The enterprise AI playbook doesn't transfer cleanly. It needs rebuilding for an institution that changes by consensus, not decree.</p>
+<p>Over the past year, running a structured AI discovery across fifteen departments at a research university, I mapped more than forty interconnected systems — admissions, registrar, finance, research administration, learning management, each with its own owner, its own data, and its own appetite for risk. What became clear fast was that "AI strategy" as a single initiative was the wrong frame. What the institution needed was a maturity model: a sequence that let different departments move at different speeds, without the whole program stalling behind the most cautious stakeholder in the room.</p>
+<h2>The four phases</h2>
+<p>The model has four stages, and the discipline is in not skipping any of them.</p>
+<div class="maturity-card">
+<p class="maturity-card-label">AI Maturity Roadmap</p>
+<div aria-label="Four-stage AI maturity roadmap" class="maturity-strip">
+<div class="maturity-step"><span class="stage-no">01</span><strong>ASSISTED</strong><span class="stage-copy">Human-led</span></div>
+<div class="maturity-step"><span class="stage-no">02</span><strong>ADVISORY</strong><span class="stage-copy">AI recommends</span></div>
+<div class="maturity-step"><span class="stage-no">03</span><strong>ADAPTIVE</strong><span class="stage-copy">AI acts within guardrails</span></div>
+<div class="maturity-step"><span class="stage-no">04</span><strong>AUTONOMOUS</strong><span class="stage-copy">AI executes end-to-end</span></div>
+</div>
+</div>
+<p><strong>Assisted</strong> is where almost every department starts, whether they call it that or not. A person uses AI to draft, summarize, or search, and reviews every output before it goes anywhere. The risk is low, the adoption curve is fast, and the real value here isn't productivity — it's literacy. People learn what the tools are actually good at, and just as importantly, where they fail.</p>
+<p><strong>Advisory</strong> is the first real commitment. AI now sits inside a defined workflow — triaging admissions files, flagging at-risk students, forecasting resource needs — and produces a recommendation. A human still makes the call. This is where governance conversations get serious, because you're now defining what the system is allowed to suggest, and to whom, and on what data.</p>
+<p><strong>Adaptive</strong> is where most enterprise deployments stop and where most university deployments should stop too, for now. Systems begin to act within guardrails and adjust based on outcomes — dynamic scheduling, automated support routing — but always under active oversight, with a clear rollback path. The temptation at this stage is to declare victory. Resist it. This phase is where you build the audit trails and escalation paths you'll need later.</p>
+<p><strong>Autonomous</strong> is the stage most institutions are years from reaching responsibly, and shouldn't rush toward. Agentic systems execute a defined process end to end. The difference between a good and a reckless autonomous deployment isn't the sophistication of the model — it's whether governance was designed into the architecture from Assisted onward, or bolted on after the fact once something went wrong.</p>
+<blockquote>The sequence matters more than the speed. A department that reaches Adaptive with real governance is further along than one that jumps to a flashy autonomous pilot with none.</blockquote>
+<h2>What this looks like in practice</h2>
+<p>In our discovery, different departments landed at different phases by design. Student-facing support workflows moved to Advisory quickly, because the downside of a bad recommendation was bounded and reviewable. Anything touching academic records or accreditation-relevant decisions stayed in Assisted far longer, because the cost of an ungoverned error there isn't just operational — it's regulatory and reputational. That unevenness isn't a failure of the program. It's the program working as intended.</p>
+<p>The instinct in enterprise technology is to standardize fast and roll out wide. In higher education, the instinct that actually works is closer to the opposite: build a common maturity language everyone in the institution understands, then let each department move through it at the pace its own risk profile allows, with the Vice Chancellor's office, the Registrar, and the Deans all reading from the same map of where things stand.</p>
+<p>That's the part enterprise transformation and institutional transformation have in common, even when everything else about the pace and politics is different: the roadmap only holds up if the people who have to live with it helped draw the lines.</p>
+<div class="article-signoff">
+<strong>Tosh Bhasin</strong>
+<span>Digital Transformation · AI · Higher Education</span>
+<a href="../writing.html">← Back to Writing</a>
+</div>
+</div>
+</div>
 </main>
-
 <footer class="site-footer">
-  <div class="wrap">
-    <div class="fine-print">
-      <span>© 2026 Tosh Bhasin</span>
-      <a href="../contact.html">Get in touch</a>
-    </div>
-  </div>
+<div class="wrap">
+<div class="fine-print">
+<span>© 2026 Tosh Bhasin</span>
+<a href="../contact.html">Get in touch</a>
+</div>
+</div>
 </footer>
-
 </body>
 </html>
